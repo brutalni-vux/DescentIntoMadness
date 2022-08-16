@@ -8,7 +8,7 @@ Q2_i<t> := ext<Q2 | x^2 + 2*x + 2>;
 i := t + 1;
 cntFail := 0;
 
-//slutnja da -i + 2 daje točku nad Q2_i kad je p == 3 mod 16
+//slutnja da -i + 2 daje točku nad Q2_i kad je p == 3 mod 16, čak nije ni prost nužno
 for p1 in [2..1000] do
     if p1 mod 16 eq 3 then
         x0 := -i + 2;
@@ -21,7 +21,7 @@ for p1 in [2..1000] do
     end if;
 end for;
 
-//slutnja da -3*i + 6 daje točku nad Q2_i kad je p == 11 mod 16
+//slutnja da -3*i + 6 daje točku nad Q2_i kad je p == 11 mod 16, čak nije ni prost nužno
 for p1 in [2..1000] do
     if p1 mod 16 eq 11 then
         x0 := -3*i + 6;
